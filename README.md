@@ -1,9 +1,11 @@
 # Intelligent PDF Queries with RAG(Retrieval Augmented Generation)
+
 About RAG-Powered PDF Query System: An intelligent tool for querying and retrieving insights from multiple PDF documents using Retrieval-Augmented Generation (RAG) technology.
 
 ![RAG](https://github.com/user-attachments/assets/d6bc2d11-3f86-47fd-be5b-45e3c976cc6e)
 
 ## Retrieval-Augmented Generation (RAG) process
+
 Here's a breakdown of the process:
 
 - **Document Retrieval:** The process begins with a user query. This query is then used to retrieve relevant documents from a knowledge base. In the image, the documents are represented by a series of file icons.
@@ -24,3 +26,8 @@ Here's a breakdown of the process:
 
 Overall, RAG enhances LLM capabilities by enabling them to access a wider range of knowledge through external document retrieval and semantic search. This allows LLMs to generate more accurate, informative, and relevant responses to user queries.
 
+### Setting up the Machine
+
+- Clone the repository to the folder.
+- Create virtual environment using `python -m venv .venv`
+- Activate the Virtual environment using `source venv/bin/activate`

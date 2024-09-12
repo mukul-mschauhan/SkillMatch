@@ -22,10 +22,10 @@ st.sidebar.subheader(body="Upload your Resume📌")
 pdf_doc = st.sidebar.file_uploader("Please upload the pdf here 🔰: ",type =['pdf'])
 
 st.subheader("Enter the Job Description 📋", divider = True)
-job_desc= st.text_area(label = "Copy Paste the Job Descripion from Linked-In or any other Portal", 
+job_desc= st.text_area(label = "Copy Paste the Job Description from Linked-In or any other Portal", 
                         max_chars=10000)
 
-submit = st.button(label="🔰 Get AI Powered Insight 🔐")
+submit = st.button(label="🔰 Get AI-Powered Insight 🔐")
 if submit:
     st.markdown(profile(pdf_doc=pdf_doc, job_desc=job_desc))
     

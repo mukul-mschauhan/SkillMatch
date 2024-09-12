@@ -31,3 +31,5 @@ Overall, RAG enhances LLM capabilities by enabling them to access a wider range 
 - Clone the repository to the folder.
 - Create virtual environment using `python -m venv .venv`
 - Activate the Virtual environment using `source venv/bin/activate`
+- Install all the required libraries `google-generativeai`, `streamlit` and `google-generativeai`
+- create local environment by the name of `.env`.

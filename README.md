@@ -1,35 +1,51 @@
-# Intelligent PDF Queries with RAG(Retrieval Augmented Generation)
+# Career Compass: Your AI-Powered Resume Navigator
 
-About RAG-Powered PDF Query System: An intelligent tool for querying and retrieving insights from multiple PDF documents using Retrieval-Augmented Generation (RAG) technology.
+![WhatsApp Image 2024-09-12 at 10 47 13](https://github.com/user-attachments/assets/345460ab-34aa-480e-b7fe-3cee34144478)
 
-![RAG](https://github.com/user-attachments/assets/d6bc2d11-3f86-47fd-be5b-45e3c976cc6e)
 
-## Retrieval-Augmented Generation (RAG) process
+**Empower your job search with AI-driven resume analysis and optimization.** 
 
-Here's a breakdown of the process:
+Career Compass is a Streamlit application that helps you tailor your resume to specific job descriptions, increasing your chances of success.  Leveraging the power of Large Language Models (LLMs) and natural language processing (NLP), it provides insights into your resume's strengths and weaknesses, identifies missing keywords, and offers actionable tips for improvement. 
 
-- **Document Retrieval:** The process begins with a user query. This query is then used to retrieve relevant documents from a knowledge base. In the image, the documents are represented by a series of file icons.
+## Features
 
-- **Document Processing:** The retrieved documents are loaded, transformed, and embedded into a vector representation. This allows for efficient comparison and search based on semantic similarity.
+* **ATS Score:** Get an estimated Applicant Tracking System (ATS) score to gauge your resume's compatibility with automated screening tools.
+* **Probability of Success:** Receive an estimated probability of success based on your resume's alignment with the job description.
+* **Keyword Analysis:** Identify keywords missing from your resume compared to the target job description.
+* **SWOT Analysis:** Get a comprehensive SWOT (Strengths, Weaknesses, Opportunities, Threats) analysis of your resume in the job context.
+* **Improvement Tips:** Receive personalized suggestions on enhancing your resume's content and structure.
+* **Resume Narrative:** Get an AI-generated rewrite of your resume, highlighting relevant skills and experience for the target job.
 
-- **Vector Database:** The embedded document vectors are stored in a vector database. This database facilitates efficient semantic search, allowing the model to find the most relevant information based on the user's query.
+## How to Use
 
-- **Semantic Search:** The system performs a semantic search on the vector database using the user's query. This means that the search is based on the meaning of the query, rather than just matching keywords. The most relevant documents are retrieved.
+1. **Upload your resume in PDF format.**
+2. **Paste the job description you're targeting.**
+3. **Click "Analyze & Optimize" and let the AI work its magic!**
 
-- **Retrieved Insights:** The relevant documents from the database are used to generate insights or context relevant to the query.
+## Technical Stack
 
-- **Prompt Generation:** Based on the retrieved insights and the original query, a prompt is generated. This prompt is designed to guide the LLM's response generation, incorporating the relevant knowledge from the retrieved documents.
+* **Streamlit:** For building the interactive web application.
+* **Python-dotenv:** For managing environment variables (e.g., OpenAI API key).
+* **Google GenerativeAI:** For leveraging large language models for analysis and generation.
+* **PyPDF2:** For extracting text from PDF resumes.
 
-- **LLM Model:** The generated prompt is fed to an LLM model. This model is trained to generate human-like text based on the provided context.
+## Installation
 
-- **Processed Output:** The LLM model processes the prompt and generates a response. This response is then presented to the user, incorporating both the LLM's knowledge and the relevant information retrieved from the documents.
+1. Clone the repository: `git clone https://github.com/your-username/Career-Compass.git`
+2. Navigate to the project directory: `cd Career-Compass`
+3. Create a virtual environment: `python -m venv .venv`
+4. Activate the virtual environment:
+    * On Windows: `.venv\Scripts\activate`
+    * On macOS/Linux:   
+ `source .venv/bin/activate`
+5. Install dependencies: `pip install -r requirements.txt`   
 
-Overall, RAG enhances LLM capabilities by enabling them to access a wider range of knowledge through external document retrieval and semantic search. This allows LLMs to generate more accurate, informative, and relevant responses to user queries.
+6. Set up your OpenAI API key in a `.env` file.
+7. Run the app: `streamlit run app.py`
 
-### Setting up the Machine
+## Disclaimer
 
-- Clone the repository to the folder.
-- Create virtual environment using `python -m venv .venv`
-- Activate the Virtual environment using `source venv/bin/activate`
-- Install all the required libraries `google-generativeai`, `streamlit` and `google-generativeai`
-- create local environment by the name of `.env`.
+* The ATS score and probability of success are estimates and should be used as guidance, not definitive predictions.
+* The AI-generated suggestions and resume narrative are meant to assist you, but always review and tailor them to your situation.
+
+**Happy job hunting!**

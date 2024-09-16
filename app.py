@@ -31,7 +31,6 @@ if submit:
     
 
 
-st.divider()
 st.subheader("Disclaimer: ", divider = True)
 notes = f'''
 1. The ATS score and probability of success are estimates and should be used as guidance, not definitive predictions.

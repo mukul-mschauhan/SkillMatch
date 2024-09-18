@@ -21,8 +21,8 @@ st.write(notes)
 st.sidebar.subheader(body="Upload your Resume📌")
 pdf_doc = st.sidebar.file_uploader("Please upload the pdf here 🔰: ",type =['pdf'])
 
-st.markdown("Created by Mukul Chauhan")
-st.markdown("Linkedin:https://www.linkedin.com/in/mksinghchauhan/")
+st.sidebar.markdown("Created by Mukul Chauhan")
+st.sidebar.markdown("Linkedin:https://www.linkedin.com/in/mksinghchauhan/")
 
 st.subheader("Enter the Job Description 📋", divider = True)
 job_desc= st.text_area(label = "Copy Paste the Job Description from Linked-In or any other Portal", 

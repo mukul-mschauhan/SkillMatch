@@ -36,15 +36,3 @@ notes = f'''
 1. The ATS score and probability of success are estimates and should be used as guidance, not definitive predictions.
 2. The AI-generated suggestions and resume narrative are meant to assist you, but always review and tailor them to your situation.'''
 st.write(notes)
-
-st.footer("created by Mukul Chauhan")
-
-
-
-
-
-
-
-
-
-

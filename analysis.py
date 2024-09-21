@@ -15,10 +15,10 @@ def profile(pdf_doc, job_desc):
         st.warning("👈 Upload your Resume")
     ats_score = model.generate_content(f"Compare the resume '{pdf}' with the job description '{job_desc}' & suggest the ATS Score(in pecentage) of the resume. ")
     probability = model.generate_content(f"Compare the resume '{pdf}' with the job description '{job_desc}' & suggest the Probability(in pecentage) of Getting Selected. ")
-    keyword_analysis = model.generate_content(f"Analyze keywords missing in the resume '{pdf}' compared to the job description '{job_desc}'")
+    keyword_analysis = model.generate_content(f"Analyze keywords missing in the resume '{pdf}' compared to the job description and mention them in bold '{job_desc}'")
     swot_analysis = model.generate_content(f"Provide a SWOT analysis of the resume '{pdf}' in the context of the job description '{job_desc}'")
-    improvement_tips = model.generate_content(f"Suggest improvements to the resume '{pdf}' to better align with the job description '{job_desc}'")
-    resume_narrative = model.generate_content(f"Rewrite the resume '{pdf}' to highlight relevant skills and experience for the job description '{job_desc}'")
+    improvement_tips = model.generate_content(f"Suggest improvements to the resume '{pdf}' to better align with the job description and mention the comments in bold  '{job_desc}'")
+    resume_narrative = model.generate_content(f"Rewrite the resume '{pdf}' to highlight relevant skills and experience accordng to the job description '{job_desc}'")
         
     # Display Results
     return{#st.subheader(body = "Resume ATS Score"),

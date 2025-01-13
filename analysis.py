@@ -1,7 +1,7 @@
 import streamlit as st
 import google.generativeai as genai
 from pdf import read_pdf
-from docx import read_docx
+from docx_reader import read_docx
 
 import os
 genai.configure(api_key=os.getenv("GOOGLE-API-KEY"))
@@ -10,10 +10,10 @@ model = genai.GenerativeModel("gemini-1.5-flash") # Initiate Model
 # Read the PDF or DOCX and store it into doc.
 def profile(doc, job_desc):
     if doc is not None:
-        if doc.name.endswith('.pdf'):
+        if doc.type == "application/pdf":
             content = read_pdf(doc)
             st.sidebar.markdown("The PDF Resume has been Uploaded ✅️ 👍")
-        elif doc.name.endswith('.docx'):
+        elif doc.type == "application/vnd.openxmlformats-officedocument.wordprocessingml.document":
             content = read_docx(doc)
             st.sidebar.markdown("The DOCX Resume has been Uploaded ✅️ 👍")
         else:

@@ -19,7 +19,7 @@ notes = f'''
 st.write(notes)
 
 st.sidebar.subheader(body="Upload your Resume📌")
-pdf_doc = st.sidebar.file_uploader("Please upload the pdf here 🔰: ",type =['pdf'])
+doc = st.sidebar.file_uploader("Please upload the pdf here 🔰: ",type =['pdf', 'docx'])
 
 st.sidebar.markdown("Created by Mukul Chauhan")
 st.sidebar.markdown("Linkedin:https://www.linkedin.com/in/mksinghchauhan/")
@@ -30,7 +30,7 @@ job_desc= st.text_area(label = "Copy Paste the Job Description from Linked-In or
 
 submit = st.button(label="🔰 Get AI-Powered Insight 🔐")
 if submit:
-    st.markdown(profile(pdf_doc=pdf_doc, job_desc=job_desc))
+    st.markdown(profile(doc= doc, job_desc=job_desc))
     
 
 

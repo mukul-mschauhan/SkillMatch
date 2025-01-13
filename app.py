@@ -19,7 +19,7 @@ notes = f'''
 st.write(notes)
 
 st.sidebar.subheader(body="Upload your Resume📌")
-pdf_doc = st.sidebar.file_uploader("Please upload the pdf here 🔰: ",type =['pdf'])
+pdf_doc = st.sidebar.file_uploader("Please upload the pdf here 🔰: ",type =['pdf', 'docx'])
 
 st.sidebar.markdown("Created by Mukul Chauhan")
 st.sidebar.markdown("Linkedin:https://www.linkedin.com/in/mksinghchauhan/")

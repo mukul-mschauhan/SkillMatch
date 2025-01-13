@@ -3,3 +3,5 @@ streamlit
 google-generativeai
 pypdf
 langchain
+PyMuPDF
+pytesseract

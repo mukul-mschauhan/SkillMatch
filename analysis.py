@@ -4,7 +4,7 @@ from pdf import read_pdf
 
 import os
 genai.configure(api_key=os.getenv("GOOGLE-API-KEY"))
-model = genai.GenerativeModel("gemini-1.5-flash") # Initiate Model
+model = genai.GenerativeModel("gemini-2.0-flash") # Initiate Model
 
 # Read the PDF and store it into pdf_doc.
 def profile(pdf_doc, job_desc):
